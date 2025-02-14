@@ -2,7 +2,7 @@ import './TodoCounter.css';
 function TodoCounter({ total, completed}){
     const message = 
         total === 0 ? '¡Agrega tu primera tarea!' :
-        completed === total ? '🎉 ¡Felicidades! Completaste todas tus tareas. 🎉' :
+        completed === total ? '¡Has completado todas las tareas!' :
         <>Has completado <span>{completed}</span> de <span>{total}</span> tareas.</>;
         
     return (

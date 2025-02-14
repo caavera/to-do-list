@@ -12,7 +12,6 @@ const defaultTodos = [
   {text: 'Picar tomate', completed: true},
   {text: 'Picar Ajo', completed: false},
   {text: 'Mezclar ingredientes', completed: false},
-  {text: '🎉 ¡pendiente! Completar todas y cada una de tus tareas. 🎉', completed: false},
 ];
 
 function App() {

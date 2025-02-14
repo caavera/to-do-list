@@ -42,8 +42,7 @@
 }
 
 .dark-mode .TodoItem-p {
-    color: rgba(255, 255, 255, 0.9);
-    /* Color más claro para mejor legibilidad */
+    color: rgba(255, 255, 255, 0.9); /* Color más claro para mejor legibilidad */
 }
 
 .TodoItem-p--completed {
