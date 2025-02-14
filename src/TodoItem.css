@@ -63,6 +63,10 @@
 }
 
 .Icon-check {
+    color: gray;
+}
+
+.Icon-check:hover {
     color: #4caf50;
 }
 
@@ -72,7 +76,7 @@
 }
 
 .Icon--delete {
-    color: #ff4d4d;
+    color: gray;
 }
 
 .Icon--delete:hover {
