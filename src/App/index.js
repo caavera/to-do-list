@@ -1,19 +1,7 @@
 import React from 'react';
-import { ThemeToggle } from '../ThemeToggle';
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { CreateTodoButton } from '../CreateTodoButton';
+import { AppUI } from './AppUI';
 import { useLocalStorage } from './useLocalStorage';
 import './App.css';
-
-// const defaultTodos = [
-//   {text: 'Cortar cebolla', completed: false},
-//   {text: 'Picar tomate', completed: true},
-//   {text: 'Picar Ajo', completed: false},
-//   {text: 'Mezclar ingredientes', completed: false},
-// ];
 
 
 function App() {
@@ -41,25 +29,15 @@ function App() {
   }
 
   return (
-    <React.Fragment>
-      <ThemeToggle />
-      <TodoCounter completed={completedToDos} total={totalToDos} />
-      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-
-      <TodoList>
-        {searchedToDos.map(todo => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeToDo(todo.text)}
-            onDelete={() => deleteToDo(todo.text)}
-          />
-        ))}
-      </TodoList>
-
-      <CreateTodoButton />
-    </React.Fragment>
+    <AppUI
+    completedToDos = {completedToDos} 
+    totalToDos = {totalToDos} 
+    searchValue = {searchValue} 
+    setSearchValue = {setSearchValue} 
+    searchedToDos = {searchedToDos} 
+    completeToDo = {completeToDo} 
+    deleteToDo = {deleteToDo}
+    />
   );
 }
 
