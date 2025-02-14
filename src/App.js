@@ -1,4 +1,5 @@
 import React from 'react';
+import { ThemeToggle } from './ThemeToggle';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
@@ -16,6 +17,7 @@ const defaultTodos = [
 function App() {
   return (
     <React.Fragment>
+      <ThemeToggle />
       <TodoCounter completed={3} total={6} />
       <TodoSearch />
 
