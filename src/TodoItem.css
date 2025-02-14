@@ -37,7 +37,13 @@
     flex: 1;
     font-size: 18px;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color-light);
+    transition: color 0.3s ease;
+}
+
+.dark-mode .TodoItem-p {
+    color: rgba(255, 255, 255, 0.9);
+    /* Color más claro para mejor legibilidad */
 }
 
 .TodoItem-p--completed {
