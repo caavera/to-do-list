@@ -8,10 +8,10 @@ function TodoCounter(){
         totalToDos
     } = React.useContext(TodoContext);
     const message = 
-        totalToDos === 0 ? '¡Agrega tu primera tarea!' :
-        completedToDos === totalToDos ? '¡Has completado todas las tareas!' :
+        totalToDos === 0 ? '¡Agrega tu primer To-Do!' :
+        completedToDos === totalToDos ? '¡Has completado todos los To-Dos!' :
         <>
-            Has completado <span>{completedToDos}</span> de <span>{totalToDos}</span> tareas.
+            Has completado <span>{completedToDos}</span> de <span>{totalToDos}</span> To-Dos
         </>;     
     return (
         <h1 className='TodoCounter'>

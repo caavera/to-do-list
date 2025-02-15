@@ -8,6 +8,7 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoLoading } from '../TodoLoading';
 import { TodoError } from '../TodoError';
 import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 import { TodoContext } from '../TodoContext';
 
 function AppUI() {
@@ -52,7 +53,7 @@ function AppUI() {
 
             {openModal && (
                 <Modal>
-                    Agregar to-do
+                    <TodoForm />
                 </Modal>
             )}
         </>

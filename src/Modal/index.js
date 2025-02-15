@@ -10,9 +10,9 @@ function Modal({ children }) {
     return ReactDOM.createPortal(
         <div className="ModalBackground" onClick={() => setOpenModal(false)}>
             <div className="ModalContainer" onClick={(e) => e.stopPropagation()}>
-                <button className="ModalCloseButton" onClick={() => setOpenModal(false)}>
+                {/* <button className="ModalCloseButton" onClick={() => setOpenModal(false)}>
                     <FaTimes />
-                </button>
+                </button> */}
                 {children}
             </div>
         </div>,

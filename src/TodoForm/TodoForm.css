@@ -1,0 +1,114 @@
+/* Contenedor del formulario */
+.TodoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+}
+
+/* Estilo del label */
+.TodoForm label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color-light); /* Se adapta al tema */
+    text-align: center;
+}
+
+/* Modo oscuro para el label */
+.dark-mode .TodoForm label {
+    color: var(--text-color-dark); /* Ajustado para mayor visibilidad */
+}
+
+/* Caja de texto (textarea) */
+.TodoForm textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--shadow-light);
+    font-size: 16px;
+    resize: none;
+    background: var(--card-color-light);
+    color: var(--text-color-light);
+    transition: all 0.3s ease;
+}
+
+/* Modo oscuro para textarea */
+.dark-mode .TodoForm textarea {
+    background: var(--card-color-dark);
+    color: var(--text-color-dark);
+    border: 1px solid var(--shadow-dark);
+}
+
+/* Ajuste cuando el textarea está enfocado */
+.TodoForm textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+/* Modo oscuro cuando el textarea está enfocado */
+.dark-mode .TodoForm textarea:focus {
+    border-color: #66bb6a; /* Un verde más suave para modo oscuro */
+}
+
+/* Contenedor de los botones */
+.TodoForm-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Botones */
+.TodoForm-cancel,
+.TodoForm-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Botón Cancelar */
+.TodoForm-cancel {
+    background: #ff4d4d;
+    color: white;
+}
+
+.TodoForm-cancel:hover {
+    background: #d63031;
+    transform: scale(1.05);
+}
+
+/* Botón Agregar */
+.TodoForm-submit {
+    background: #4caf50;
+    color: white;
+}
+
+.TodoForm-submit:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Modo oscuro para los botones */
+.dark-mode .TodoForm-cancel {
+    background: #e74c3c;
+}
+
+.dark-mode .TodoForm-cancel:hover {
+    background: #c0392b;
+}
+
+.dark-mode .TodoForm-submit {
+    background: #2ecc71;
+}
+
+.dark-mode .TodoForm-submit:hover {
+    background: #27ae60;
+}
