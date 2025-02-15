@@ -13,6 +13,8 @@ function TodoProvider({ children }) {
 
     const [searchValue, setSearchValue] = React.useState('');
 
+    const [openModal, setOpenModal] = React.useState(false);
+
     const totalToDos = toDos.length;
     const completedToDos = toDos.filter(toDo => !!toDo.completed).length;
 
@@ -45,7 +47,9 @@ function TodoProvider({ children }) {
             setSearchValue,
             searchedToDos,
             completeToDo,
-            deleteToDo
+            deleteToDo,
+            openModal,
+            setOpenModal,
         }}>
             {children}
         </TodoContext.Provider >
