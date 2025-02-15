@@ -4,8 +4,12 @@ import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton';
+import { TodoLoading } from '../TodoLoading';
+import { TodoError } from '../TodoError';
 
 function AppUI({
+    loading,
+    error,
     completedToDos, 
     totalToDos, 
     searchValue, 
@@ -27,6 +31,14 @@ function AppUI({
             />
 
             <TodoList>
+                {loading && 
+                    <>
+                        <TodoLoading />
+                        <TodoLoading />
+                        <TodoLoading />
+                    </>
+                }
+                {error && <TodoError />}
                 {searchedToDos.map(todo => (
                     <TodoItem
                         key={todo.text}

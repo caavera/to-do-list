@@ -1,0 +1,57 @@
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor del skeleton */
+.LoadingTodoItem-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 16px;
+    background: var(--card-color-light);
+    box-shadow: 0px 4px 6px var(--shadow-light);
+    overflow: hidden;
+    
+    /* Nueva animación de entrada */
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Fondo animado para los iconos */
+.LoadingTodoItem-completeIcon,
+.LoadingTodoItem-deleteIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite linear;
+}
+
+/* Simulación del texto en carga */
+.LoadingTodoItem-text {
+    flex: 1;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite linear;
+}

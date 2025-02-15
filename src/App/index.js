@@ -5,7 +5,12 @@ import './App.css';
 
 
 function App() {
-  const [toDos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const {
+    item: toDos,
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage('TODOS_V1', []);
 
   const [searchValue, setSearchValue] = React.useState('');
 
@@ -30,6 +35,8 @@ function App() {
 
   return (
     <AppUI
+    loading = {loading}
+    error = {error}
     completedToDos = {completedToDos} 
     totalToDos = {totalToDos} 
     searchValue = {searchValue} 
