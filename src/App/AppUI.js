@@ -1,3 +1,4 @@
+import React from 'react';
 import { ThemeToggle } from '../ThemeToggle';
 import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
@@ -6,30 +7,23 @@ import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoLoading } from '../TodoLoading';
 import { TodoError } from '../TodoError';
+import { TodoContext } from '../TodoContext';
 
-function AppUI({
-    loading,
-    error,
-    completedToDos, 
-    totalToDos, 
-    searchValue, 
-    setSearchValue, 
-    searchedToDos, 
-    completeToDo, 
-    deleteToDo
-}) {
+function AppUI() {
+    const {
+        loading,
+        error,
+        searchedToDos,
+        completeToDo,
+        deleteToDo,
+    } = React.useContext(TodoContext);
+
     return (
         <>
             <ThemeToggle />
-            <TodoCounter 
-                completed={completedToDos} 
-                total={totalToDos} 
-            />
-            <TodoSearch 
-                searchValue={searchValue} 
-                setSearchValue={setSearchValue} 
-            />
-
+            <TodoCounter />
+            <TodoSearch />
+            
             <TodoList>
                 {loading && 
                     <>
