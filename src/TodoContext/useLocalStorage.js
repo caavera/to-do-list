@@ -24,7 +24,7 @@ function useLocalStorage(itemName, initialValue) {
             } finally {
                 setLoading(false);
             }
-        }, 2000);  // ⏳ Retraso de 2 segundos para simular carga
+        }, 600);  // ⏳ Retraso de 1 segundos para simular carga
     }, [itemName]);
 
     const saveItem = (newItem) => {

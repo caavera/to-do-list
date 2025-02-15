@@ -1,6 +1,7 @@
 import React from 'react';
 import './TodoForm.css';
 import { TodoContext } from '../TodoContext';
+import Swal from 'sweetalert2';
 
 function TodoForm() {
     const {
@@ -12,9 +13,17 @@ function TodoForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (newToDoValue.trim().length === 0) return; // Evita agregar To-Dos vacíos
+        if (newToDoValue.trim().length === 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'No puedes agregar un To-Do vacío!',
+                confirmButtonColor: '#ff4d4d',
+            });
+            return;
+        }
         addToDo(newToDoValue);
-        setOpenModal(false); // Cierra el modal después de agregar
+        setOpenModal(false);
     };
 
     const handleCancel = () => {
