@@ -48,7 +48,7 @@ function AppUI() {
                 ))}
             </TodoList>
 
-            <CreateTodoButton onCreate={createToDo()}/>
+            <CreateTodoButton setOpenModal={setOpenModal}/>
 
             {openModal && (
                 <Modal>
