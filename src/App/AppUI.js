@@ -28,9 +28,9 @@ function AppUI() {
             <ThemeToggle />
             <TodoCounter />
             <TodoSearch />
-            
+
             <TodoList>
-                {loading && 
+                {loading &&
                     <>
                         <TodoLoading />
                         <TodoLoading />
@@ -40,7 +40,7 @@ function AppUI() {
                 {error && <TodoError />}
                 {searchedToDos.map(todo => (
                     <TodoItem
-                        key={todo.text}
+                        key={todo.id} // 🔥 Ahora usamos un ID único en lugar del texto
                         text={todo.text}
                         completed={todo.completed}
                         onComplete={() => completeToDo(todo.text)}
@@ -49,7 +49,7 @@ function AppUI() {
                 ))}
             </TodoList>
 
-            <CreateTodoButton setOpenModal={setOpenModal}/>
+            <CreateTodoButton setOpenModal={setOpenModal} />
 
             {openModal && (
                 <Modal>
