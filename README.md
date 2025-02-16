@@ -3,8 +3,10 @@
 ![To-Do List App](https://img.shields.io/badge/React-18-blue?style=flat&logo=react)  
 📌 **Un elegante y funcional administrador de tareas construido con React.**  
 
-## 🌟 Demo  
-🚀 **Próximamente:** [🔗 Ver Proyecto](#) 
+---
+
+## 🚀 Aplicación en Vivo  
+💻 **Disponible aquí:** [🔗 Ver Proyecto](#) *(Actualiza este enlace cuando lo despliegues)*  
 
 ---
 
@@ -58,7 +60,7 @@ npm start
 
 ---
 
-## 🔥 Autor  
+## 🎨 Autor  
 👤 **Alberto Betancourt**  
 📧 Contacto: [LinkedIn](#) | [GitHub](https://github.com/albertoBetancourt)  
 
@@ -69,5 +71,5 @@ Este proyecto está bajo la **MIT License**.
 
 ---
 
-🎯 **¡Gracias por visitar este proyecto! Espero que te ayude a organizar tus tareas de forma eficiente. 🚀✅**  
+🎯 **¡Gracias por visitar este proyecto! Espero que te ayude a organizar tus tareas de forma eficiente. ✅**  
   
