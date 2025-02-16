@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 Aplicación en Vivo  
-💻 **Disponible aquí:** [🔗 Ver Proyecto](#) *(Actualiza este enlace cuando lo despliegues)*  
+💻 **Disponible aquí:** [🔗 Ver Proyecto](#) 
 
 ---
 
