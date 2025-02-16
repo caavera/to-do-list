@@ -67,7 +67,7 @@ npm start
 ---
 
 ## 📜 Licencia  
-Este proyecto está bajo la **MIT License**.  
+Este proyecto está bajo la **MIT License**.   
 
 ---
 
