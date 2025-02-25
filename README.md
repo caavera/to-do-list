@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 Aplicación en Vivo  
-💻 **Disponible aquí:** [🔗 Ver Proyecto](https://albertobetancourt.github.io/to-do-list/) 
+💻 **Disponible aquí:** [🔗 Ver Proyecto](https://caavera.github.io/to-do-list/)
 
 ---
 
